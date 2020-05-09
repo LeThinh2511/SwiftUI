@@ -19,7 +19,6 @@ struct LandmarkRow: View {
             Text(landmark.name)
             Spacer()
         }
-    .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12))
     }
 }
 

@@ -10,6 +10,8 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
+    var coordinate: CLLocationCoordinate2D
+    
     func makeUIView(context: Context) -> MKMapView {
         return MKMapView(frame: .zero)
     }
@@ -25,6 +27,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinate: landmarkData[0].locationCoordinate)
     }
 }
